@@ -7,30 +7,54 @@ import FadeInWhenVisible from "../../hooks/FadeInWhenVisible";
 import Banner from "../../components/Banner";
 import InfoStrp from "../../components/InfoStrp";
 import Title from "../../components/Title/Title";
+import IconButton from "../../components/IconButton";
 
 import BannerImg from "../../assets/images/banner.jpg";
 import Prev from "../../assets/images/icons/prev.svg";
 import Next from "../../assets/images/icons/next.svg";
 import GlobalBanner from "../../assets/images/global-img.jpg";
-import IconButton from "../../components/IconButton";
+
+const data = [
+  {
+    superText: "ideal destination",
+    title: "Why India is an ideal Investment Destination?",
+    link: "/hello",
+  },
+  {
+    superText: "ideal destination",
+    title: "Why India is an ideal Investment Destination?",
+    link: "/hello",
+  },
+  {
+    superText: "ideal destination",
+    title: "Why India is an ideal Investment Destination?",
+    link: "/hello",
+  },
+  {
+    superText: "ideal destination",
+    title: "Why India is an ideal Investment Destination?",
+    link: "/hello",
+  },
+];
 
 const Home = ({ hamOpen }) => {
   useEffect(() => {
     getUser();
+    setbannerData(data);
   }, []);
 
-  const [data, setData] = useState([]);
+  const [bannerData, setbannerData] = useState([]);
 
   async function getUser() {
     try {
-      const response = await axios.get("/api/teams.json");
-      setData(response.data.team);
+      const response = await axios.get("/api/banners.json");
+      setbannerData(response.data.banners);
     } catch (error) {
       console.error(error);
     }
   }
 
-  console.log(data, "data");
+  console.log(bannerData, "bannerData");
 
   var slideSettings = {
     dots: true,
@@ -66,27 +90,16 @@ const Home = ({ hamOpen }) => {
     >
       <div className="banner-slider">
         <Slider {...slideSettings}>
-          <div>
-            <Banner
-              BannerImg={BannerImg}
-              superText="ideal destination"
-              title=" Why India is an ideal Investment Destination?"
-            />
-          </div>
-          <div>
-            <Banner
-              BannerImg={BannerImg}
-              superText="ideal destination"
-              title=" Why India is an ideal Investment Destination?"
-            />
-          </div>
-          <div>
-            <Banner
-              BannerImg={BannerImg}
-              superText="ideal destination"
-              title=" Why India is an ideal Investment Destination?"
-            />
-          </div>
+          {bannerData.map((item) => (
+            <div>
+              <Banner
+                BannerImg={BannerImg}
+                superText={item.superText}
+                title={item.title}
+                link={item.link}
+              />
+            </div>
+          ))}
         </Slider>
       </div>
       <div className="section-padding">
@@ -126,13 +139,6 @@ const Home = ({ hamOpen }) => {
               infoLink="https://www.icicipruamc.com/about-us"
             />
           </FadeInWhenVisible>
-
-          {data.map((x) => (
-            <>
-              <p>{x.name}</p>
-              <p>{x.designation}</p>
-            </>
-          ))}
         </div>
       </div>
       <div className="section-padding bordered-grid">

@@ -27,15 +27,15 @@ const Header = ({ getOpenState }) => {
   const menuItems = [
     {
       name: "About Us",
-      link: "",
+      link: "/about",
     },
     {
       name: "Investment Expertise",
-      link: "",
+      link: "/investment-expertise",
     },
     {
       name: "Team",
-      link: "",
+      link: "/team",
     },
     {
       name: "Funds",
@@ -89,7 +89,7 @@ const Header = ({ getOpenState }) => {
           </a>
         </div>
       </div>
-      <Menu open={open} menuList={menuItems} />
+      <Menu open={open} setOpen={setOpen} menuList={menuItems} />
       <div
         className={`${open ? "overlay" : null}`}
         onClick={handleMenuOpen}

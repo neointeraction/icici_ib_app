@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { motion, AnimatePresence } from "framer-motion";
 
-const Menu = ({ open, menuList }) => {
+const Menu = ({ open, setOpen, menuList }) => {
   return (
     <>
       <div className="side-menu-container">
@@ -23,7 +23,7 @@ const Menu = ({ open, menuList }) => {
                   key={i}
                   className="menu-item"
                 >
-                  <Link to={item.link}>
+                  <Link to={item.link} onClick={() => setOpen(!open)}>
                     <motion.div
                       whileHover={{ x: 10, opacity: 0.5 }}
                       transition={{ duration: 0.5 }}

@@ -179,6 +179,10 @@ body {
   border-top: 4px solid #c9b16d;
 }
 
+.pt-0 {
+  padding-top: 0 !important;
+}
+
 .overlay {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -733,4 +737,168 @@ body {
 .social-icons.yt:hover {
   background: #c4302b;
   transition: 0.3s all ease-in-out;
+}
+
+/* about */
+
+.banner-static {
+  position: relative;
+}
+
+.banner-static img {
+  width: 100%;
+}
+
+.about-map-img img {
+  width: 100%;
+}
+
+.map-legend {
+  margin-top: 60px;
+}
+
+.map-legend-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.map-legend-list li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #161414;
+}
+
+.map-legend-list li span {
+  margin-right: 10px;
+}
+
+.map-legend-list li:nth-child(2) {
+  margin: 0 70px;
+}
+
+/* TEAM  */
+
+/* team card */
+
+.team-card-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+.team-img img {
+  width: 100%;
+}
+
+.team-info {
+  margin-top: 15px;
+  border: 1.5px solid #c9b16d;
+  padding: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #002654;
+  margin-bottom: 10px;
+}
+
+.team-designation {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #002654;
+}
+
+.tc-onhover {
+  border: 2px solid #c9b16d;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  animation-name: expand;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  padding-right: 20px;
+}
+
+.tc-onhover h4 {
+  padding-right: 20px;
+}
+
+.team-info.hide {
+  animation-name: collapsed;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+  0% {
+    height: 28%;
+    background: none;
+  }
+  100% {
+    height: 100%;
+    background: rgba(201, 177, 109, 0.95);
+  }
+}
+
+@keyframes collapsed {
+  0% {
+    height: 100%;
+    background: rgba(201, 177, 109, 0.95);
+  }
+  100% {
+    height: 28%;
+    background: none;
+  }
+}
+
+.team-summary {
+  margin-top: 20px;
+  max-height: 80%;
+  padding-right: 20px;
+  overflow: auto;
+  display: none;
+}
+
+.team-summary.show {
+  display: block;
+}
+
+.team-summary p {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #002654;
+  margin-bottom: 15px;
+}
+
+/* scrollbar */
+.team-summary::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.team-summary::-webkit-scrollbar-track {
+  background: #e8e8e8;
+}
+
+/* Handle */
+.team-summary::-webkit-scrollbar-thumb {
+  background: #002654;
+}
+
+/* Handle on hover */
+.team-summary::-webkit-scrollbar-thumb:hover {
+  background: #013069;
 }

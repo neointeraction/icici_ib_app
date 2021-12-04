@@ -4,7 +4,7 @@ import Title from "../../components/Title/Title";
 import IconButton from "../IconButton";
 import FadeInWhenVisible from "../../hooks/FadeInWhenVisible";
 
-const Banner = ({ BannerImg, superText, title }) => {
+const Banner = ({ BannerImg, superText, title, link }) => {
   return (
     <div className="banner-img">
       <img src={BannerImg} alt="Banner" />
@@ -18,7 +18,7 @@ const Banner = ({ BannerImg, superText, title }) => {
           </FadeInWhenVisible>
           <FadeInWhenVisible delay={1}>
             <div className="text-center">
-              <IconButton link="/" />
+              <IconButton link={link} />
             </div>
           </FadeInWhenVisible>
         </div>
