@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Arrow from "../../assets/images/icons/btnArrow.svg";
 
@@ -153,18 +154,18 @@ const Home = () => {
       <div className="bottom-footer">
         <div className="b-footer">
           <div className="b-footer-row">
-            <a href="/#" className="footer-link">
+            <Link to="/privacy" className="footer-link">
               Privacy Policy
-            </a>
+            </Link>
 
-            <a href="/#" className="footer-link">
+            <Link to="/legal" className="footer-link">
               Legal Terms
-            </a>
+            </Link>
           </div>
           <div className="b-footer-row">
-            <a href="/#" className="footer-link">
+            <Link to="/disclaimer" className="footer-link">
               Statutory Details & Disclaimer
-            </a>
+            </Link>
             <a href="/#" className="footer-link">
               Disclosure Document
             </a>

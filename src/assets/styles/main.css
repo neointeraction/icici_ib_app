@@ -550,6 +550,11 @@ body {
   margin-bottom: 20px;
 }
 
+.body-text strong {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
 /* IMGFLEX SECTION  */
 
 .img-text-flex {
@@ -748,6 +753,9 @@ body {
 .banner-static img {
   width: 100%;
 }
+.about-logo-container img {
+  width: 100%;
+}
 
 .about-map-img img {
   width: 100%;
@@ -788,6 +796,7 @@ body {
   position: relative;
   overflow: hidden;
   padding-bottom: 200px;
+  margin-bottom: 30px;
 }
 
 .team-img img {
@@ -885,7 +894,7 @@ body {
 
 /* scrollbar */
 .team-summary::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 /* Track */
@@ -901,4 +910,17 @@ body {
 /* Handle on hover */
 .team-summary::-webkit-scrollbar-thumb:hover {
   background: #013069;
+}
+
+.subtitle {
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: 500;
+  text-align: center;
+  color: #002654;
+  margin-bottom: 20px;
+}
+
+.sub-section {
+  margin-top: 40px;
 }
