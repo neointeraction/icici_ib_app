@@ -795,8 +795,8 @@ body {
 .team-card-container {
   position: relative;
   overflow: hidden;
-  padding-bottom: 200px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .team-img img {
@@ -805,17 +805,19 @@ body {
 
 .team-info {
   margin-top: 15px;
-  border: 1.5px solid #c9b16d;
-  padding: 40px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+}
+
+.tc-upfront {
+  border: 1px solid #c9b16d;
+  padding: 30px;
+  height: 100%;
 }
 
 .team-name {
   font-weight: 500;
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 28px;
   text-align: center;
   color: #002654;
   margin-bottom: 10px;
@@ -823,53 +825,10 @@ body {
 
 .team-designation {
   font-weight: 300;
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 18px;
+  line-height: 24px;
   text-align: center;
   color: #002654;
-}
-
-.tc-onhover {
-  border: 2px solid #c9b16d;
-  box-sizing: border-box;
-  width: 100%;
-  height: 0;
-  animation-name: expand;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  padding-right: 20px;
-}
-
-.tc-onhover h4 {
-  padding-right: 20px;
-}
-
-.team-info.hide {
-  animation-name: collapsed;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes expand {
-  0% {
-    height: 28%;
-    background: none;
-  }
-  100% {
-    height: 100%;
-    background: rgba(201, 177, 109, 0.95);
-  }
-}
-
-@keyframes collapsed {
-  0% {
-    height: 100%;
-    background: rgba(201, 177, 109, 0.95);
-  }
-  100% {
-    height: 28%;
-    background: none;
-  }
 }
 
 .team-summary {
@@ -923,4 +882,79 @@ body {
 
 .sub-section {
   margin-top: 40px;
+}
+
+/* modal  */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+}
+
+.modal-box {
+  background: #ffffff;
+  border: 1px solid #c9b16d;
+  box-sizing: border-box;
+  padding: 60px;
+  width: 560px;
+  margin: auto;
+  max-height: 90vh;
+  overflow: auto;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s all ease-in;
+  z-index: 10;
+  animation-name: modal;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes modal {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.modal-team-info {
+  margin-top: 40px;
+}
+
+.modal-team-name {
+  font-size: 36px;
+}
+
+.modal-team-designation {
+  font-size: 32px;
+  margin-top: 20px;
+  line-height: 42px;
+}
+
+.modal-body-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #002654;
+}
+
+.summary-text {
+  margin-top: 30px;
+}
+
+.team-card-container .team-img img {
+  transition: 0.3s all ease-in-out;
+}
+
+.team-card-container:hover .team-img img {
+  transform: scale(0.98);
+  transition: 0.3s all ease-in-out;
 }
