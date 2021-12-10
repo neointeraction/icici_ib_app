@@ -12,6 +12,7 @@ import Team from "./pages/Team/Team";
 import Privacy from "./pages/Privacy";
 import LegalTerms from "./pages/LegalTerms";
 import Disclaimer from "./pages/Disclaimer";
+import Contact from "./pages/Contact";
 
 function App() {
   const [hamOpen, setHamOpen] = useState(false);
@@ -40,6 +41,7 @@ function App() {
           exact
           element={<Disclaimer hamOpen={hamOpen} />}
         />
+        <Route path="/contact" exact element={<Contact hamOpen={hamOpen} />} />
       </Routes>
       <Footer />
     </div>

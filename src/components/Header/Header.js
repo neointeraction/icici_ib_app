@@ -51,7 +51,7 @@ const Header = ({ getOpenState }) => {
     },
     {
       name: "Contact us",
-      link: "",
+      link: "/contact",
     },
   ];
 

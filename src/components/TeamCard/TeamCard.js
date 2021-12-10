@@ -1,7 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import useModal from "../../hooks/useModal";
 import Modal from "../Modal";
+import Close from "../../assets/images/icons/close.svg";
 
 const TeamCard = ({ image, name, designation, summary }) => {
   const { toggle, visible } = useModal();
@@ -22,6 +24,18 @@ const TeamCard = ({ image, name, designation, summary }) => {
 
       <Modal visible={visible} toggle={toggle}>
         <div className="modal-content">
+          <div className="modal-close">
+            <motion.img
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 0.5 },
+              }}
+              whileTap={{ scale: 0.9 }}
+              src={Close}
+              alt="Close"
+              onClick={toggle}
+            />
+          </div>
           <div className="modal-profile">
             <div className="row">
               <div className="col-md-8">
