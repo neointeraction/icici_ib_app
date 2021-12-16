@@ -83,12 +83,14 @@ const Team = ({ hamOpen }) => {
     >
       <div className="banner-static">
         <img src={TeamBanner} alt="TeamBanner" />
+        <div className="banner-static-content">
+          <FadeInWhenVisible delay={0.1}>
+            <Title titleText="Our Team" />
+          </FadeInWhenVisible>
+        </div>
       </div>
       <div className="section-padding">
         <div className="container">
-          <FadeInWhenVisible>
-            <Title titleText="Our Team" />
-          </FadeInWhenVisible>
           <FadeInWhenVisible>
             <div className="row">
               {data.map((item) => (

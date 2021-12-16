@@ -17,29 +17,30 @@ const Privacy = ({ hamOpen }) => {
     >
       <div className="banner-static">
         <img src={PrivacyBanner} alt="PrivacyBanner" />
+        <div className="banner-static-content">
+          <FadeInWhenVisible delay={0.1}>
+            <Title titleText="Privacy Policy" />
+          </FadeInWhenVisible>
+        </div>
       </div>
       <div className="section-padding">
         <div className="container">
           <FadeInWhenVisible>
-            <Title titleText="Privacy Policy" />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <p className="body-text">
-              We are committed to maintaining the accuracy, confidentiality, and
-              security of our users’ personal information. This Privacy Policy
-              describes the personal information that we collect from or about
-              our users, how we use that information, and to whom it is
-              disclosed.
-            </p>
-            <p className="body-text">
-              This Policy is designed to comply with the privacy requirements
-              established by the General Data Protection Regulation (“GDPR”), as
-              well as with all applicable laws around the world that are
-              intended to protect an individual’s privacy. It supports our need
-              to collect information from our users as necessary for our
-              performance of business services and functions, while also
-              recognizing a user’s right to have their information handled in a
-              way that protects the privacy of their personal information.
+            <p className="body-text text-left">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+              viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+              imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+              ultricies nisi. ,
             </p>
           </FadeInWhenVisible>
           <FadeInWhenVisible>

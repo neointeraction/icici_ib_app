@@ -18,12 +18,15 @@ const InvestmentExpertise = ({ hamOpen }) => {
     >
       <div className="banner-static">
         <img src={IEBanner} alt="IEBanner" />
+        <div className="banner-static-content">
+          <FadeInWhenVisible delay={0.1}>
+            <Title titleText="Investment Expertise" />
+          </FadeInWhenVisible>
+        </div>
       </div>
       <div className="section-padding">
         <div className="container">
-          <FadeInWhenVisible>
-            <Title titleText="Investment Expertise" />
-          </FadeInWhenVisible>
+          <FadeInWhenVisible></FadeInWhenVisible>
           <FadeInWhenVisible>
             <p className="body-text">
               The AMC has a large and experienced Investment team based in
@@ -64,7 +67,7 @@ const InvestmentExpertise = ({ hamOpen }) => {
               <img src={IEBanner2} alt="IEBanner2" />
             </div>
 
-            <div className="itf-content">
+            <div className="itf-content ">
               <FadeInWhenVisible>
                 <Title
                   titleText="Our Commitment to ESG and Sustainability in Investing"
@@ -84,6 +87,12 @@ const InvestmentExpertise = ({ hamOpen }) => {
                   delay in payments for investments across mutual funds or
                   advised offshore mandates.
                 </p>
+                <FadeInWhenVisible>
+                  <InfoStrp
+                    infoText=" Our Stewardship Policy :  "
+                    infoLink="https://www.icicipruamc.com/stewardship-responsibility"
+                  />
+                </FadeInWhenVisible>
               </FadeInWhenVisible>
             </div>
           </div>

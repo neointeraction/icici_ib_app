@@ -22,12 +22,16 @@ const About = ({ hamOpen }) => {
     >
       <div className="banner-static">
         <img src={AboutImg} alt="AboutImg" />
+
+        <div className="banner-static-content">
+          <FadeInWhenVisible delay={0.1}>
+            <Title titleText="About US" />
+          </FadeInWhenVisible>
+        </div>
       </div>
       <div className="section-padding">
         <div className="container">
-          <FadeInWhenVisible>
-            <Title titleText="About US" />
-          </FadeInWhenVisible>
+          <FadeInWhenVisible></FadeInWhenVisible>
           <div className="row">
             <div className="col-md-3">
               <FadeInWhenVisible>

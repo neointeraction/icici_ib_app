@@ -16,12 +16,14 @@ const Contact = ({ hamOpen }) => {
     >
       <div className="banner-static">
         <img src={ContactBanner} alt="ContactBanner" />
+        <div className="banner-static-content">
+          <FadeInWhenVisible delay={0.1}>
+            <Title titleText="Contact Us" />
+          </FadeInWhenVisible>
+        </div>
       </div>
       <div className="section-padding text-center">
         <div className="container">
-          <FadeInWhenVisible>
-            <Title titleText="Contact Us" />
-          </FadeInWhenVisible>
           <FadeInWhenVisible>
             <h4 className="section-subtitle">Get in touch with us</h4>
             <div className="contact-detail-block">

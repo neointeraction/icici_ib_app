@@ -305,7 +305,6 @@ button {
 }
 
 .header-icon {
-  border: 1.5px solid #ffffff;
   border-radius: 2px;
   padding: 11px 15px;
   display: flex;
@@ -456,10 +455,36 @@ button {
 
 .banner-content {
   position: absolute;
-  bottom: 80px;
+  bottom: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
+  padding: 40px;
+  z-index: 1;
+}
+
+.banner-img::after {
+  content: "";
+  height: 300px;
+  width: 100%;
+  background-color: #0e5d7b;
+  margin-top: 0px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.44) 0%,
+    rgba(0, 0, 0, 0.08) 66.67%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  bottom: 0;
+}
+
+.banner-text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: left;
 }
 
 /* slick slider  */
@@ -573,7 +598,7 @@ button {
   align-items: center;
 }
 
-.img-text-flex div {
+.img-text-flex > div {
   flex-basis: 50%;
 }
 
@@ -758,6 +783,23 @@ button {
 
 .banner-static {
   position: relative;
+}
+.banner-static-content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.banner-static-content .section-title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 .banner-static img {
