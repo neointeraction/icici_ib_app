@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import FadeInWhenVisible from "../../hooks/FadeInWhenVisible";
 import Title from "../../components/Title/Title";
 
-import PrivacyBanner from "../../assets/images/privacy-banner.jpg";
+import STBanner from "../../assets/images/st-banner.jpg";
 
 const Disclaimer = ({ hamOpen }) => {
   return (
@@ -15,15 +15,17 @@ const Disclaimer = ({ hamOpen }) => {
       className="page-container"
     >
       <div className="banner-static">
-        <img src={PrivacyBanner} alt="PrivacyBanner" />
+        <img src={STBanner} alt="STBanner" />
+        <div className="banner-static-content">
+          <FadeInWhenVisible delay={0.1}>
+            <Title titleText="Statutory Details & Disclaimer" />
+          </FadeInWhenVisible>
+        </div>
       </div>
       <div className="section-padding">
         <div className="container">
           <FadeInWhenVisible>
-            <Title titleText="Statutory Details & Disclaimer" />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible>
-            <div className="sub-section">
+            <div className="sub-section mt-0">
               <h4 className="subtitle">Satutory Details</h4>
               <p className="body-text">
                 Please read this information carefully. Access to this website

@@ -12,39 +12,39 @@ const Home = () => {
             <h5 className="footer-title">QUICK LINKS</h5>
             <ul className="footer-link-list">
               <li>
-                <a className="footer-link" href="/#">
+                <Link className="footer-link" to="/about">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="footer-link" href="/#">
+                <Link className="footer-link" to="/investment-expertise">
                   Investment Expertise
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="footer-link" href="/#">
+                <Link className="footer-link" to="/team">
                   Our Team
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="footer-link" href="/#">
+                <Link className="footer-link" to="/funds">
                   Funds
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="footer-link" href="/#">
+                <Link className="footer-link" to="/downloads">
                   Downloads
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="footer-link" href="/#">
+                <Link className="footer-link" to="/#">
                   News and Insights
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="footer-link" href="/#">
+                <Link className="footer-link" to="/contact">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -166,9 +166,9 @@ const Home = () => {
             <Link to="/disclaimer" className="footer-link">
               Statutory Details & Disclaimer
             </Link>
-            <a href="/#" className="footer-link">
+            <Link to="/disclosure-documents" className="footer-link">
               Disclosure Document
-            </a>
+            </Link>
           </div>
         </div>
         <div>

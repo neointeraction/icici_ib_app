@@ -13,6 +13,9 @@ import Privacy from "./pages/Privacy";
 import LegalTerms from "./pages/LegalTerms";
 import Disclaimer from "./pages/Disclaimer";
 import Contact from "./pages/Contact";
+import Downloads from "./pages/Downloads";
+import DisclosureDocuments from "./pages/DisclosureDocuments";
+import Funds from "./pages/Funds";
 
 function App() {
   const [hamOpen, setHamOpen] = useState(false);
@@ -42,6 +45,17 @@ function App() {
           element={<Disclaimer hamOpen={hamOpen} />}
         />
         <Route path="/contact" exact element={<Contact hamOpen={hamOpen} />} />
+        <Route
+          path="/download"
+          exact
+          element={<Downloads hamOpen={hamOpen} />}
+        />
+        <Route
+          path="/disclosure-documents"
+          exact
+          element={<DisclosureDocuments hamOpen={hamOpen} />}
+        />
+        <Route path="/funds" exact element={<Funds hamOpen={hamOpen} />} />
       </Routes>
       <Footer />
     </div>

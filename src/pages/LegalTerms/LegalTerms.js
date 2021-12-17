@@ -16,12 +16,14 @@ const LegalTerms = ({ hamOpen }) => {
     >
       <div className="banner-static">
         <img src={LegalBanner} alt="LegalBanner" />
+        <div className="banner-static-content">
+          <FadeInWhenVisible delay={0.1}>
+            <Title titleText="Legal Terms" />
+          </FadeInWhenVisible>
+        </div>
       </div>
       <div className="section-padding">
         <div className="container">
-          <FadeInWhenVisible>
-            <Title titleText="Legal Terms" />
-          </FadeInWhenVisible>
           <FadeInWhenVisible>
             <p className="body-text">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem

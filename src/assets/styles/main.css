@@ -168,6 +168,12 @@ body {
 
 button {
   cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .text-center {
@@ -299,9 +305,11 @@ button {
 }
 
 .header-content.white {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   transition: 0.3s all ease-in-out;
   padding: 15px 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .header-icon {
@@ -309,15 +317,22 @@ button {
   padding: 11px 15px;
   display: flex;
   justify-content: center;
+  border: 1.5px solid transparent;
 }
 
 .header-content.white .header-icon {
-  border: 1.5px solid #c9b16d;
+  border: 1.5px solid transparent;
   transition: 0.3s all ease-in-out;
 }
 
 .header-icon:hover {
   background: #c9b16d;
+  transition: 0.5s all ease-in-out;
+}
+
+.header-content.white .header-icon:hover {
+  background: transparent;
+  border: 1.5px solid #c9b16d;
   transition: 0.5s all ease-in-out;
 }
 
@@ -1210,4 +1225,194 @@ button {
 
 .input-block.error .error-text {
   display: block;
+}
+
+/* collapse */
+
+.collapse-container {
+  margin-top: 0;
+  background: #f4efe2;
+  padding: 12px 20px;
+  min-height: 50px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.collapse-container.open {
+  background: transparent;
+  border: 1px solid #c9b16d;
+  box-sizing: border-box;
+}
+
+.collapse-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 10px 0;
+  display: none;
+}
+
+.collapse-body.open {
+  overflow: hidden;
+  animation-name: opened;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  display: block;
+}
+
+.collapse-body.closed {
+  animation-name: closed;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  display: none;
+}
+
+@keyframes opened {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 100vh;
+    opacity: 1;
+  }
+}
+
+@keyframes closed {
+  0% {
+    max-height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+.collpase-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #002654;
+}
+
+.collapse-body-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.section-sub-subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #161414;
+}
+
+/* download-list-container */
+
+.download-list-container {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.file-name {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #002654;
+}
+
+.file-name span {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #5e6977;
+  margin-top: 10px;
+}
+
+.anchor-links-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anchor-button {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c9b16d;
+  border: 1px solid #c9b16d;
+  padding: 13px 30px;
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.anchor-button:hover {
+  color: #fff;
+  background: #c9b16d;
+  transition: 0.3s all ease-in-out;
+}
+
+.image-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.image-text-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-text-container div {
+  flex-basis: 50%;
+}
+
+.image-block {
+  padding: 40px 40px 40px 0;
+}
+
+.text-block {
+  padding: 40px 0 40px 40px;
+}
+
+.image-text-container.reverse .text-block {
+  padding: 40px 40px 40px 0;
+}
+.image-text-container.reverse .image-block {
+  padding: 40px 0 40px 40px;
+}
+
+.tb-title {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 42px;
+  color: #002654;
+  margin-bottom: 20px;
+}
+
+.tb-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: justify;
+  color: #394040;
+}
+
+.image-block img {
+  width: 100%;
 }

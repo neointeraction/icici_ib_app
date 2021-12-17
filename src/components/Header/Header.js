@@ -39,11 +39,11 @@ const Header = ({ getOpenState }) => {
     },
     {
       name: "Funds",
-      link: "",
+      link: "/funds",
     },
     {
       name: "Downloads",
-      link: "",
+      link: "/download",
     },
     {
       name: "News & Insights",
