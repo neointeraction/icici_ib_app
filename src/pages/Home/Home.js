@@ -15,6 +15,7 @@ import BannerImg3 from "../../assets/images/banner3.jpg";
 import Prev from "../../assets/images/icons/prev.svg";
 import Next from "../../assets/images/icons/next.svg";
 import GlobalBanner from "../../assets/images/global-img.jpg";
+import CookieOverlay from "../../components/CookieOverlay";
 
 const data = [
   {
@@ -155,6 +156,7 @@ const Home = ({ hamOpen }) => {
           </FadeInWhenVisible>
         </div>
       </div>
+      <CookieOverlay />
     </motion.div>
   );
 };

@@ -1416,3 +1416,159 @@ button {
 .image-block img {
   width: 100%;
 }
+
+.filter-links-flex {
+  justify-content: flex-start;
+}
+
+.filter-links-flex button {
+  margin-right: 20px;
+}
+
+.news-card {
+  border: 1px solid #c9b16d;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.news-card-block {
+  margin-top: 30px;
+}
+
+.news-details {
+  padding: 20px;
+}
+
+.news-title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #002654;
+  margin-bottom: 16px;
+}
+
+.news-author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5e6977;
+}
+
+.news-author span {
+  font-weight: 500;
+  color: #002654;
+}
+
+.news-info-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.news-info-flex p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #909ba9;
+  margin-bottom: 0;
+}
+
+/* dowmnload animation  */
+
+.gold,
+.blue {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.gold {
+  z-index: 999;
+  background-color: rgba(201, 177, 109, 0.3);
+  animation: hide1 2s ease infinite;
+}
+
+.blue {
+  background-color: rgba(2, 40, 82, 0.4);
+  animation: hide2 2s ease infinite;
+}
+
+@keyframes hide1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes hide2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.download-btn {
+  position: relative;
+}
+
+/* cookie */
+
+.cookie-container {
+  background: #ffffff;
+  border-top: 1px solid #c9b16d;
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 40px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-content {
+  flex-basis: 70%;
+}
+
+.cookie-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #002654;
+}
+
+.cookie-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #002654;
+}
+
+.link-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #002654;
+}
+
+.cookie-btn {
+  flex-basis: 10%;
+}
