@@ -16,6 +16,8 @@ import Prev from "../../assets/images/icons/prev.svg";
 import Next from "../../assets/images/icons/next.svg";
 import GlobalBanner from "../../assets/images/global-img.jpg";
 
+import InitialFlowModal from "../../components/InitialFlowModal";
+
 const data = [
   {
     text: "For our latest India outlook pls click here",
@@ -33,6 +35,8 @@ const data = [
     link: "/hello",
   },
 ];
+
+
 
 const Home = ({ hamOpen }) => {
   useEffect(() => {
@@ -154,6 +158,9 @@ const Home = ({ hamOpen }) => {
             </div>
           </FadeInWhenVisible>
         </div>
+        <InitialFlowModal>
+        </InitialFlowModal>
+        
       </div>
     </motion.div>
   );
