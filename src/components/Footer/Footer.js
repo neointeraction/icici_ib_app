@@ -32,12 +32,12 @@ const Home = () => {
                 </Link>
               </li>
               <li>
-                <Link className="footer-link" to="/downloads">
+                <Link className="footer-link" to="/download">
                   Downloads
                 </Link>
               </li>
               <li>
-                <Link className="footer-link" to="/#">
+                <Link className="footer-link" to="/news">
                   News and Insights
                 </Link>
               </li>
