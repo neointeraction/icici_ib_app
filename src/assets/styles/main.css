@@ -971,6 +971,12 @@ button {
   max-height: 90vh;
   overflow: hidden;
 }
+
+.modal-box.md {
+  width: 900px;
+  padding: 30px 40px 40px 40px;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0px;
@@ -1571,4 +1577,231 @@ button {
 
 .cookie-btn {
   flex-basis: 10%;
+}
+
+.country-btn {
+  padding: 4px;
+  border: 1px solid rgba(57, 64, 64, 0.2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  min-height: 50px;
+  transition: 0.3s all ease-in-out;
+}
+
+.country-btn.active {
+  border: 1px solid #c9b16d;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+
+.country-btn.active::after {
+  content: url(../images/icons/tick.svg);
+  position: absolute;
+  right: 16px;
+  transition: 0.3s all ease-in-out;
+}
+
+.step-section-margin {
+  margin-top: 40px;
+}
+
+.modal .slick-dots {
+  bottom: 66px !important;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #002654;
+  margin-top: -10px;
+}
+
+.modal-slick-action-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modal-slick-action-btn button {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 16px;
+}
+
+.classify-select-box {
+  width: 70%;
+  margin: auto;
+}
+
+.classify-btn {
+  padding: 20px 20px 30px 20px;
+  border: 1px solid rgba(57, 64, 64, 0.2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  min-height: 50px;
+  transition: 0.3s all ease-in-out;
+}
+
+.classify-btn.active {
+  border: 1px solid #c9b16d;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+
+.classify-img {
+  position: relative;
+  margin-right: 30px;
+}
+
+.classify-btn.active .classify-img::after {
+  content: url(../images/icons/tick-type2.svg);
+  position: absolute;
+  bottom: -26px;
+  left: 42%;
+  transition: 0.3s all ease-in-out;
+}
+
+.classify-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #2f2b2b;
+  text-align: left;
+}
+
+.classify-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2f2b2b;
+  text-align: left;
+}
+
+.classify-btn.active .classify-title,
+.classify-btn.active .classify-text {
+  color: #c9b16d;
+}
+
+.term-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #394040;
+  margin-bottom: 20px;
+}
+
+.term-block {
+  max-height: 360px;
+  overflow: auto;
+}
+
+/* scrollbar */
+.term-block::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.term-block::-webkit-scrollbar-track {
+  background: #e8e8e8;
+}
+
+/* Handle */
+.term-block::-webkit-scrollbar-thumb {
+  background: #002654;
+}
+
+/* Handle on hover */
+.term-block::-webkit-scrollbar-thumb:hover {
+  background: #013069;
+}
+
+.agree-input {
+  margin-top: 20px;
+}
+
+/* checkbox style  */
+
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+.custom-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid #000000;
+}
+.custom-checkbox:hover + label:before {
+  border: 1px solid #c9b16d;
+}
+
+.custom-checkbox:checked + label:before {
+  background: #c9b16d;
+  border: 1px solid #c9b16d;
+}
+.custom-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.custom-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.custom-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+    4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+
+.country-input {
+  padding: 16.5px 16.5px 16.5px 40px;
+  border: 1px solid #c9b16d;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2f2b2b;
+}
+.country-input::placeholder {
+  color: #c9b16d;
+  font-weight: 300;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon::before {
+  content: url(../images/icons/globe.svg);
+  position: absolute;
+  left: 12px;
+  top: 15px;
+  z-index: 9;
 }

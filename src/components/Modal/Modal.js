@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import ReactDOM from "react-dom";
 
-const Modal = ({ visible, toggle, children }) =>
+const Modal = ({ visible, toggle, children, md, preventCloseOnOverlayClick }) =>
   visible
     ? ReactDOM.createPortal(
         <>
@@ -10,7 +10,7 @@ const Modal = ({ visible, toggle, children }) =>
             <motion.div
               animate={{ y: [100, 0] }}
               transition={{ duration: 0.5 }}
-              className="modal-box"
+              className={`modal-box ${md ? "md" : ""}`}
               role="dialog"
               aria-modal="true"
             >
@@ -19,7 +19,7 @@ const Modal = ({ visible, toggle, children }) =>
           </div>
           <div
             className={`${visible ? "modal-overlay" : null}`}
-            onClick={toggle}
+            onClick={preventCloseOnOverlayClick ? null : toggle}
           ></div>
         </>,
         document.body

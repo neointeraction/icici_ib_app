@@ -3,11 +3,15 @@ import Slider from "react-slick";
 import { motion } from "framer-motion";
 import axios from "axios";
 
+import useModal from "../../hooks/useModal";
+
 import FadeInWhenVisible from "../../hooks/FadeInWhenVisible";
 import Banner from "../../components/Banner";
 import InfoStrp from "../../components/InfoStrp";
 import Title from "../../components/Title/Title";
 import IconButton from "../../components/IconButton";
+import CookieOverlay from "../../components/CookieOverlay";
+import InitialPageModal from "../../components/InitialPageModal";
 
 import BannerImg from "../../assets/images/banner.jpg";
 import BannerImg2 from "../../assets/images/banner2.jpg";
@@ -15,7 +19,6 @@ import BannerImg3 from "../../assets/images/banner3.jpg";
 import Prev from "../../assets/images/icons/prev.svg";
 import Next from "../../assets/images/icons/next.svg";
 import GlobalBanner from "../../assets/images/global-img.jpg";
-import CookieOverlay from "../../components/CookieOverlay";
 
 const data = [
   {
@@ -36,9 +39,14 @@ const data = [
 ];
 
 const Home = ({ hamOpen }) => {
+  const { toggle, visible } = useModal();
+
   useEffect(() => {
     getUser();
     setbannerData(data);
+    setTimeout(() => {
+      toggle();
+    }, 1500);
   }, []);
 
   const [bannerData, setbannerData] = useState([]);
@@ -157,6 +165,7 @@ const Home = ({ hamOpen }) => {
         </div>
       </div>
       <CookieOverlay />
+      <InitialPageModal visible={visible} toggle={toggle} />
     </motion.div>
   );
 };
