@@ -1409,6 +1409,7 @@ height: 50px;
   font-size: 34px;
   line-height: 42px;
   color: #022852;
+  font-weight: bold;
 }
 
 .contact-info {
@@ -1691,20 +1692,23 @@ height: 50px;
 
 .anchor-links-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .anchor-button {
   font-size: 14px;
   line-height: 22px;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #c9b16d;
   border: 1px solid #c9b16d;
   padding: 13px 30px;
   text-decoration: none;
   transition: 0.3s all ease-in-out;
+  margin-right: 20px;
+  height: 50px;
 }
 
 .anchor-button:hover {
@@ -1745,7 +1749,7 @@ height: 50px;
 }
 
 .tb-title {
-  font-weight: 500;
+  font-weight:bold;
   font-size: 34px;
   line-height: 42px;
   color: #002654;
@@ -1756,7 +1760,7 @@ height: 50px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  text-align: justify;
+  text-align: left;
   color: #394040;
 }
 
@@ -1793,6 +1797,31 @@ height: 50px;
 .map-legend-list li {
   font-size: 16px;
 }
+/* funds/invetment strategies page */
+.anchor-links-flex a:nth-child(5){
+margin-top:20px;
+}
+.image-text-container {
+  flex-flow: column;
+}
+.image-text-container.reverse {
+  flex-direction: column;
+}
+.image-block {
+  padding: 0;
+  margin: 30px 0;
+}
+.text-block {
+  padding:0;
+}
+.image-text-container.reverse .image-block {
+  padding: 0;
+  margin: 30px 0;
+}
+.image-text-container.reverse .text-block {
+  padding: 0;
+}
+/* Downloads page */
 
 
 
@@ -1840,6 +1869,18 @@ width: 18px;
   margin: 0 35px;
 }
 
+/* funds/invetment strategies page */
+.anchor-links-flex a:nth-child(4),.anchor-links-flex a:nth-child(5){
+  margin-top:20px;
+  }
+  .image-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+  
 
 }
 @media only screen and (max-width: 768px) {
@@ -1897,6 +1938,24 @@ width: 18px;
 .map-legend-list li:nth-child(2) {
   margin: 20px 0;
 }
+/* funds/invetment strategies page */
+.anchor-links-flex a:nth-child(3),.anchor-links-flex a:nth-child(4),
+.anchor-links-flex a:nth-child(5){
+  margin-top:20px;
+  }
+
+  /* downloads page */
+  .file-name {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.section-subtitle{
+font-size: 28px;
+}
+.section-sub-subtitle{
+  font-size: 18px;
+}
 
 
 }
@@ -1953,6 +2012,45 @@ width: 18px;
   font-size: 12px;
 }
 
+/* funds/invetment strategies page */
+.anchor-links-flex a:nth-child(4),
+.anchor-links-flex a:nth-child(5){
+  margin-top:10px;
+  }
+  .anchor-links-flex a:nth-child(3){
+    margin-top: 0;
+  }
+
+.anchor-button {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 13px 13px;
+  margin-right: 10px;
+  height: 40px;
+}
+.tb-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+.tb-title {
+  font-size: 28px;
+  line-height: 36px;
+}
+/* downloads page */
+.section-subtitle {
+  font-size: 24px;
+}
+.file-name {
+  font-size: 16px;
+}
+.file-name span {
+  font-size: 12px;
+}
+.section-sub-subtitle {
+  font-size: 14px;
+  line-height: 14px;
+}
+
 }
 @media only screen and (max-width: 426px) {
   
@@ -1976,6 +2074,21 @@ width: 18px;
 .about-logo-container {
   width: 100px;
 }
-
+/* funds/invetment strategies page */
+.anchor-links-flex a:nth-child(3){
+  margin-top: 10px;
+}
+.tb-title {
+  font-size: 24px;
+  line-height: 34px;
+}
+.tb-text {
+  font-size: 16px;
+  line-height: 26px;
+}
+/* downloads page */
+.section-subtitle {
+  font-size: 20px;
+}
   
 }
