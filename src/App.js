@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import Downloads from "./pages/Downloads";
 import DisclosureDocuments from "./pages/DisclosureDocuments";
 import Funds from "./pages/Funds";
+import News from "./pages/News/News";
 
 function App() {
   const [hamOpen, setHamOpen] = useState(false);
@@ -56,6 +57,7 @@ function App() {
           element={<DisclosureDocuments hamOpen={hamOpen} />}
         />
         <Route path="/funds" exact element={<Funds hamOpen={hamOpen} />} />
+        <Route path="/news" exact element={<News hamOpen={hamOpen} />} />
       </Routes>
       <Footer />
     </div>

@@ -15,6 +15,7 @@ import BannerImg3 from "../../assets/images/banner3.jpg";
 import Prev from "../../assets/images/icons/prev.svg";
 import Next from "../../assets/images/icons/next.svg";
 import GlobalBanner from "../../assets/images/global-img.jpg";
+import CookieOverlay from "../../components/CookieOverlay";
 
 import InitialFlowModal from "../../components/InitialFlowModal";
 
@@ -162,6 +163,7 @@ const Home = ({ hamOpen }) => {
         </InitialFlowModal>
         
       </div>
+      <CookieOverlay />
     </motion.div>
   );
 };

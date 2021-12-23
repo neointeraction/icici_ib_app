@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import Menu from "../Menu/Menu";
 
@@ -47,7 +48,7 @@ const Header = ({ getOpenState }) => {
     },
     {
       name: "News & Insights",
-      link: "",
+      link: "/news",
     },
     {
       name: "Contact us",
@@ -69,9 +70,9 @@ const Header = ({ getOpenState }) => {
           </div>
         </motion.div>
 
-        <a href="/#" className="logo">
+        <Link to="/" className="logo">
           <img src={Logo} alt="Logo" />
-        </a>
+        </Link>
         <div>
           <a href="/#" className="header-icon">
             <svg
