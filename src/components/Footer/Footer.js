@@ -8,7 +8,7 @@ const Home = () => {
     <footer className="footer footer-padding d-flex flex-column">
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6">
             <h5 className="footer-title">QUICK LINKS</h5>
             <ul className="footer-link-list">
               <li>
@@ -48,7 +48,7 @@ const Home = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6">
             <div>
               <h5 className="footer-title"> LOCATE US</h5>
               <p className="w-lh">
@@ -65,7 +65,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="col-md-4 ">
+          <div className="col-lg-4 rch-scl">
             <div className="mb-20">
               <h5 className="footer-title">REACH US</h5>
               <ul className="contact-list">

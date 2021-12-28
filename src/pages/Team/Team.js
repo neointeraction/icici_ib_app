@@ -94,7 +94,7 @@ const Team = ({ hamOpen }) => {
           <FadeInWhenVisible>
             <div className="row">
               {data.map((item) => (
-                <div className="col-xl-4 col-lg-4">
+                <div className="col-xl-4 col-lg-4 col-md-6">
                   <TeamCard
                     image={item.image}
                     name={item.name}

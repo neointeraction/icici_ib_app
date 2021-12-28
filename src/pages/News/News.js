@@ -77,6 +77,7 @@ const News = ({ hamOpen }) => {
               <button className="anchor-button">Last 30 days</button>
               <button className="anchor-button">Mutual Funds</button>
               <button className="anchor-button">Equity Shares</button>
+              <button className="anchor-button">Investments</button>
               <button className="anchor-button">Strategies</button>
             </div>
           </FadeInWhenVisible>
