@@ -1478,7 +1478,7 @@ height: 50px;
   color: #394040;
 }
 
-/* conatct  */
+/* contact  */
 
 .form-section {
   width: 450px;
@@ -2170,10 +2170,38 @@ height: 50px;
   top: 15px;
   z-index: 9;
 }
-
+/* funds/investment strategies page */
+.knw-mr-btn{
+  position: relative;
+  top: 25px;
+}
+/* kba page */
+.asterisk-text{
+  font-size:14px;
+  text-align: center;
+}
+.breadcrumbs{
+  display: flex;
+  margin-bottom: 60px;
+}
+.brdcrmb-item{
+  text-decoration: none;
+  font-size: 18px;
+  color: #013069;
+  text-transform: uppercase;
+  font-weight: medium;
+}
+.marg-sixty{
+  margin-bottom: 60px;
+}
+.brd-disabled{
+  color: #002654;
+  cursor: default;
+  pointer-events: none;
+}
 
 @media only screen and (max-width: 1400px) {
-  /* funds/investment expertise page */
+  /* funds/investment startegies page */
   .itf-content {
     padding: 5px 15px 5px 30px;
 }
@@ -2236,7 +2264,7 @@ margin-top:20px;
   padding: 0;
 }
 
-/* funds/investment expertise page */
+/* investment expertise page */
 
 .inv-sust .itf-img img {
   object-fit: cover;
@@ -2387,6 +2415,7 @@ width: 18px;
   width: 90%;
   margin: auto;
 }
+
 }
 @media only screen and (max-width: 768px) {
   /* header */
@@ -2707,6 +2736,18 @@ font-size: 28px;
   font-size: 16px;
 }
 
+/* kba page */
+.breadcrumbs{
+  display: flex;
+  margin-bottom: 60px;
+}
+.brdcrmb-item{
+  font-size: 16px;
+}
+.asterisk-text{
+  font-size:12px;
+  text-align: center;
+}
 }
 @media only screen and (max-width: 576px) {
 
@@ -3032,6 +3073,17 @@ font-size: 28px;
 .link-text {
   font-size: 14px;
 }
+/* kba page */
+.breadcrumbs{
+  display: flex;
+  margin-bottom: 30px;
+}
+.brdcrmb-item{
+  font-size: 14px;
+}
+.asterisk-text{
+  font-size:10px;
+}
 
 }
 @media only screen and (max-width: 426px) {
@@ -3220,6 +3272,11 @@ width: 25px;
 .custom-button {
   font-size: 12px;
   line-height: 16px;
+}
+
+/* kba page */
+.brdcrmb-item{
+  font-size: 12px;
 }
 
 }
