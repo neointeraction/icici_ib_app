@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 function BreadCrumb(props) {
@@ -19,7 +18,7 @@ function BreadCrumb(props) {
               <li
                 key={ ci }
               >
-                <a href="#/funds" className={ `brdcrmb-item ${ disabled }` } onClick={ () => props.selected(crumb) }>
+                <a href={props.selected} className={ `brdcrmb-item ${ disabled }` } >
                   { crumb }
                 </a>
               </li>

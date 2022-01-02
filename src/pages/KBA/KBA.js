@@ -11,9 +11,7 @@ import IEBanner from "../../assets/images/kba-banner.jpg";
 const KBA = ({ hamOpen }) => {
 
   const [crumbs, setCrumbs] = useState([ 'INVESTMENT STRATEGIES  /', ' KBA ']);
-           const selected = crumb => {
-            console.log(crumb);
-          }
+           const selected = "#/funds";
     return (
       <motion.div
         animate={{ scale: hamOpen ? 0.995 : 1 }}
@@ -31,10 +29,6 @@ const KBA = ({ hamOpen }) => {
         </div>
         <div className="section-padding">
           <div className="container">
-
-           {/* <div className="marg-sixty">
-            <a className="breadcrumbs" href="#/funds"> Investment Strategies  /  KBA </a>
-           </div> */}
            
           <BreadCrumb crumbs={ crumbs } selected={ selected }  />
           

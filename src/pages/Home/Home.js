@@ -20,7 +20,6 @@ import Prev from "../../assets/images/icons/prev.svg";
 import Next from "../../assets/images/icons/next.svg";
 import GlobalBanner from "../../assets/images/global-img.jpg";
 
-import InitialFlowModal from "../../components/InitialFlowModal";
 
 const data = [
   {
@@ -167,8 +166,7 @@ const Home = ({ hamOpen }) => {
             </div>
           </FadeInWhenVisible>
         </div>
-        <InitialFlowModal>
-        </InitialFlowModal>
+       
         
       </div>
       <CookieOverlay />
