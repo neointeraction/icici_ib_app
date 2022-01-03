@@ -6,8 +6,7 @@ const IconButton = ({ isGold, link, alignLeft }) => {
     <div className={alignLeft ? "dInline" : "dflex"}>
       <Link to={link} className={`icon-btn ${isGold ? "gold" : null}`}>
         <svg
-          width="26"
-          height="18"
+          
           viewBox="0 0 26 18"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

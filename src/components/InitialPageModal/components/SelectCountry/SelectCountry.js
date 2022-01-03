@@ -96,7 +96,7 @@ const SelectCountry = () => {
     <div className="step-section-margin">
       <div className="row">
         {data.map((item, e) => (
-          <div className="col-md-3">
+          <div className="col-lg-3 col-md-4 col-sm-6 col-6">
             <button
               className={`country-btn ${item.id === activeId ? "active" : ""}`}
               onClick={() => handleValue(item.id, item.countryName)}
@@ -108,7 +108,7 @@ const SelectCountry = () => {
             </button>
           </div>
         ))}
-        <div className="col-md-6">
+        <div className="col-lg-6 col-md-4 col-sm-12">
           <div className="input-with-icon">
             <input
               type="text"

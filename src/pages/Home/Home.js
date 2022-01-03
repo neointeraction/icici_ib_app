@@ -20,6 +20,7 @@ import Prev from "../../assets/images/icons/prev.svg";
 import Next from "../../assets/images/icons/next.svg";
 import GlobalBanner from "../../assets/images/global-img.jpg";
 
+
 const data = [
   {
     text: "For our latest India outlook pls click here",
@@ -37,6 +38,8 @@ const data = [
     link: "/hello",
   },
 ];
+
+
 
 const Home = ({ hamOpen }) => {
   const { toggle, visible } = useModal();
@@ -163,6 +166,8 @@ const Home = ({ hamOpen }) => {
             </div>
           </FadeInWhenVisible>
         </div>
+       
+        
       </div>
       <CookieOverlay />
       <InitialPageModal visible={visible} toggle={toggle} />

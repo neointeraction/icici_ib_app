@@ -61,7 +61,7 @@ const InvestmentExpertise = ({ hamOpen }) => {
         </div>
       </div>
       <div className="section-padding pt-0">
-        <div className="section-padding bordered-grid">
+        <div className="section-padding bordered-grid inv-sust">
           <div className="img-text-flex">
             <div className="itf-img">
               <img src={IEBanner2} alt="IEBanner2" />

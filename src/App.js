@@ -17,6 +17,7 @@ import Downloads from "./pages/Downloads";
 import DisclosureDocuments from "./pages/DisclosureDocuments";
 import Funds from "./pages/Funds";
 import News from "./pages/News/News";
+import KBA from "./pages/KBA";
 
 function App() {
   const [hamOpen, setHamOpen] = useState(false);
@@ -58,6 +59,7 @@ function App() {
         />
         <Route path="/funds" exact element={<Funds hamOpen={hamOpen} />} />
         <Route path="/news" exact element={<News hamOpen={hamOpen} />} />
+        <Route path="/kba" exact element={<KBA hamOpen={hamOpen} />} />
       </Routes>
       <Footer />
     </div>
